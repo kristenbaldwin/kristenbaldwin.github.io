@@ -1,0 +1,68 @@
+body {
+    font-family: 'Hind', sans-serif;
+    padding: 0 50px 0 50px;
+}
+
+code {
+    font-family: 'Hind', sans-serif; 
+}
+
+a:link {
+    color: rgb(157, 21, 157);
+} 
+
+a:hover {
+    color: rgb(227, 53, 227);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+}
+  
+h4 {    
+    text-align: left;
+}
+  
+hr {
+    background-color: #000;
+    height: 1px;
+    border: none;
+    box-shadow: 0 0 8px #666;
+}
+  
+.headshot {
+    display: inline-block;
+    margin-left: 30%;
+    padding-bottom: 15px;
+    width: 120px;
+    height: 120px;
+}
+  
+.contact-info {
+    display: inline-block;
+    padding: 7px 0 0 15px;
+    vertical-align: top;
+    text-align: left;
+    font-style: italic;
+}
+  
+.close-line-spacing {
+    line-height: 0.2;
+}
+  
+.footer {
+    padding-top: 15px;  
+}
+  
+  
+td {
+    padding: 0 1px 0 1px;
+}
+
+.header {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(9, 150, 9);
+    margin: 30px 0 3px 0;
+}
