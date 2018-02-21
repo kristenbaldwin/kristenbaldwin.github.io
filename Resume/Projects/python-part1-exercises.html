@@ -10,99 +10,121 @@
 <body>
     <h1><u>Python Part 1 Exercises</u></h1>
     <p class="header"># Exercise 1</p>
-    <code>
-    name = input("What is your name? ")<br>
-    print("Hello, {}!".format(name))
-    </code>
+    <p>Prompt the user for his name using the input function. Upon receiving his name, you will say hello to him.</p>
+        <div class="code">
+            name = input("What is your name? ")<br>
+            print("Hello, {}!".format(name))
+        </div>
     <p class="header"># Exercise 2</p>
-    <code>
-    name = input("WHAT IS YOUR NAME? ")<br>
-    name = name.upper()<br>
-    name_length = len(name)<br>
-    print(f"HELLO, {name}!")<br>
-    print(f"YOUR NAME HAS {name_length} LETTERS IN IT! AWESOME!")
-    </code>
+    <p>Same as the first exercise, but this time print the user's name in ALL CAPS, and also tell them the number of letters in their name.</p>
+        <div class="code">
+            name = input("WHAT IS YOUR NAME? ")<br>
+            name = name.upper()<br>
+            name_length = len(name)<br>
+            print(f"HELLO, {name}!")<br>
+            print(f"YOUR NAME HAS {name_length} LETTERS IN IT! AWESOME!")
+        </div>
     <p class="header"># Exercise 3</p>
-    <code>
-    print("Please fill in the blanks below:
-    ____(name)____'s favorite subject in school is ____(subject)____.")<br>
-    name = input("What is your name? ")<br>
-    subject = input("What is your favorite subject? ")<br>
-    print(f"{name}'s favorite subject in school is {subject}.")
-    </code>
+    <p>Prompt the user for the missing words to a Madlib sentence using the input function.</p>
+        <div class="code">
+            print("Please fill in the blanks below:
+            ____(name)____'s favorite subject in school is ____(subject)____.")<br>
+            name = input("What is your name? ")<br>
+            subject = input("What is your favorite subject? ")<br>
+            print(f"{name}'s favorite subject in school is {subject}.")
+        </div>
     <p class="header"># Exercise 4</p>
-    <code>
-    day = int(input('Day (0-6)? '))<br>
-    days_of_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    print(days_of_week[day])
-    </code>
+    <p>The user will enter a number between 0 to 6 inclusive. Given this number, print a day of the week. 0 for Sunday, 1 for Monday, 2 for Tuesday, and so on.</p>
+        <div class="code">
+            day = int(input('Day (0-6)? '))<br>
+            days_of_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+            print(days_of_week[day])
+        </div>
     <p class="header"># Exercise 5</p>
-    <code>
-    day = int(input('Day (0-6)? '))<br>
-    if day > 0 and day < 6:<br>
-    &emsp;print("Go to work")<br>
-    else:<br>
-    &emsp;print("Sleep in")
-    </code>
+    <p>Prompt the user for a day of the week just like the previous problem. Except this time print "Go to work" if it's a work day and "Sleep in" if it's a weekend day.</p>
+        <div class="code">
+            day = int(input('Day (0-6)? '))<br>
+            if day > 0 and day < 6:<br>
+            &emsp;print("Go to work")<br>
+            else:<br>
+            &emsp;print("Sleep in")
+        </div>
     <p class="header"># Exercise 6</p>
-    <code>
-    celsius = float(input('Temperature in C? '))<br>
-    fahrenheit = celsius * 1.8 + 32<br>
-    print(f"{fahrenheit} F")
-    </code>
+    <p>Prompt the user for a number in degrees Celsius, and convert the value to degrees in Fahrenheit and display it to the user.</p>
+    <p><i>Hint: the formula to convert degrees C to degrees F is: F = C x 1.8 + 32.</i></p>
+        <div class="code">
+            celsius = float(input('Temperature in C? '))<br>
+            fahrenheit = celsius * 1.8 + 32<br>
+            print(f"{fahrenheit} F")
+        </div>
     <p class="header"># Exercise 7</p>
-    <code>
-    total = int(input("Total bill amount? "))<br>
-    level_of_service = input("Level of service? ")<br>
-    if level_of_service == "good":<br>
-    &emsp;tip_amount = total * 0.20<br>
-    elif level_of_service == "fair":<br>
-    &emsp;tip_amount = total * 0.15<br>
-    elif level_of_service == "bad":<br>
-    &emsp;tip_amount = total * 0.10<br>
-    <br>
-    bill_total = total + tip_amount<br>
-    print("Tip amount: ${:.2f}".format(tip_amount))<br>
-    print("Total amount: ${:.2f}".format(bill_total))
-    </code>
+    <p>Prompt the user for two things:</p>
+        <ol>
+            <li>The total bill amount:</li>
+            <li>The level of service, which can be one of the following: good, fair, or bad</li>
+        </ol>
+    <p>Calculate the tip amount and the total amount (bill amount + tip amount). The tip percentage based on the level of service is based on:</p>
+        <ul>
+            <li>good -> 20%</li>
+            <li>fair -> 15%</li>
+            <li>bad -> 10%</li>
+        </ul>
+    <p><i>Hint: To format a float number as a dollar value, use Python's formatting syntax: "{:.2f}".format(amount)</i></p>
+        <div class="code">
+            total = int(input("Total bill amount? "))<br>
+            level_of_service = input("Level of service? ")<br>
+            if level_of_service == "good":<br>
+            &emsp;tip_amount = total * 0.20<br>
+            elif level_of_service == "fair":<br>
+            &emsp;tip_amount = total * 0.15<br>
+            elif level_of_service == "bad":<br>
+            &emsp;tip_amount = total * 0.10<br>
+            <br>
+            bill_total = total + tip_amount<br>
+            print("Tip amount: ${:.2f}".format(tip_amount))<br>
+            print("Total amount: ${:.2f}".format(bill_total))
+        </div>
     <p class="header"># Exercise 8</p>
-    <code>
-    total = int(input("Total bill amount? "))<br>
-    level_of_service = input("Level of service? ")<br>
-    number_of_split = int(input("Split how many ways? "))<br>
-    if level_of_service == "good":<br> 
-    &emsp;tip_amount = total * 0.20<br>
-    elif level_of_service == "fair":<br>
-    &emsp;tip_amount = total * 0.15<br>
-    elif level_of_service == "bad":<br>
-    &emsp;tip_amount = total * 0.10<br>
-    <br>
-    bill_total = total + tip_amount<br>
-    per_person = bill_total / number_of_split<br>
-    print("Tip amount: ${:.2f}".format(tip_amount))<br>
-    print("Total amount: ${:.2f}".format(bill_total))<br>
-    print("Amount per person: ${:.2f}".format(per_person))
-    </code>
+    <p>Allow the ability to divide the check into a equal parts amount a number of people. The user will enter the number of people to be divided amongst.</p>
+        <div class="code">
+            total = int(input("Total bill amount? "))<br>
+            level_of_service = input("Level of service? ")<br>
+            number_of_split = int(input("Split how many ways? "))<br>
+            if level_of_service == "good":<br> 
+            &emsp;tip_amount = total * 0.20<br>
+            elif level_of_service == "fair":<br>
+            &emsp;tip_amount = total * 0.15<br>
+            elif level_of_service == "bad":<br>
+            &emsp;tip_amount = total * 0.10<br>
+            <br>
+            bill_total = total + tip_amount<br>
+            per_person = bill_total / number_of_split<br>
+            print("Tip amount: ${:.2f}".format(tip_amount))<br>
+            print("Total amount: ${:.2f}".format(bill_total))<br>
+            print("Amount per person: ${:.2f}".format(per_person))
+        </div>
     <p class="header"># Exercise 9</p>
-    <code>
-    count = 0<br>
-    while count < 10:<br>
-    &emsp;count += 1<br>
-    &emsp;print(count)<br>
-    </code>
+    <p>Use a while loop to print the numbers from 1 to 10.</p>
+        <div class="code">
+            count = 0<br>
+            while count < 10:<br>
+            &emsp;count += 1<br>
+            &emsp;print(count)<br>
+        </div>
     <p class="header"># Exercise 10</p>
-    <code>
-    coins = 0<br>
-    another_coin = ''<br>
-    print("You have 0 coins.")<br>
-    while True:<br>
-    &emsp;another_coin = input("Do you want another? ")<br>
-    &emsp;if another_coin == "yes":<br>
-    &emsp;&emsp;coins += 1<br>
-    &emsp;&emsp;print(f"You have {coins} coins.")<br>
-    &emsp;elif another_coin == "no":<br>
-    &emsp;&emsp;print("Bye")<br>
-    &emsp;&emsp;break<br>
-</code>
+    <p>Write a program that will prompt you for how many coins you want. Initially you have no coins. It will ask you if you want a coin? If you type "yes", it will give you one coin, and print out the current tally. If you type no, it will stop the program.</p>
+        <div class="code">
+            coins = 0<br>
+            another_coin = ''<br>
+            print("You have 0 coins.")<br>
+            while True:<br>
+            &emsp;another_coin = input("Do you want another? ")<br>
+            &emsp;if another_coin == "yes":<br>
+            &emsp;&emsp;coins += 1<br>
+            &emsp;&emsp;print(f"You have {coins} coins.")<br>
+            &emsp;elif another_coin == "no":<br>
+            &emsp;&emsp;print("Bye")<br>
+            &emsp;&emsp;break<br>
+        </div>
 </body>
 </html>
