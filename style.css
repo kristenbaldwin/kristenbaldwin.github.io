@@ -8,11 +8,13 @@ code {
 }
 
 a:link {
-    color: rgb(157, 21, 157);
+    color: rgb(6, 134, 240);
+    text-decoration: none;
 } 
 
 a:hover {
-    color: rgb(227, 53, 227);
+    color: rgb(131, 197, 252);
+    text-decoration: underline;
 }
 
 h1 {
@@ -30,11 +32,14 @@ hr {
     border: none;
     box-shadow: 0 0 8px #666;
 }
-  
+
+#header {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
 .headshot {
     display: inline-block;
-    margin-left: 30%;
-    padding-bottom: 15px;
     width: 120px;
     height: 120px;
 }
