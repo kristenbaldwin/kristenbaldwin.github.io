@@ -1,19 +1,25 @@
 body {
     font-family: 'Hind', sans-serif;
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 80%;
+    margin: 20px auto 20px auto;
+}
+
+code {
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    color: white;
 }
 
 .code {
-    font-family: 'Hind', sans-serif; 
-    color: white;
-    letter-spacing: 0.1em;
     background-color: #333;
     box-shadow: 0 2px 5px rgb(61, 61, 61);
     box-sizing: border-box;
-    max-width: 800px;
-    padding: 12px;
+    max-width: 700px;
     margin-bottom: 40px;
+    overflow: scroll;
+
 }
 
 a:link {
@@ -48,20 +54,21 @@ hr {
 }
 
 #header {
-    padding-bottom: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .headshot {
-    display: inline-block;
+    display: block;
     width: 120px;
     height: 120px;
+    margin: 15px 15px 20px 0;
 }
   
 .contact-info {
-    display: inline-block;
-    padding: 20px 0 0 15px;
-    vertical-align: top;
+    display: block;
+    margin: auto 0;
     text-align: left;
     font-style: italic;
 }
@@ -71,7 +78,7 @@ hr {
 }
   
 .footer {
-    padding-top: 15px;  
+    padding-top: 5px;  
 }
   
   

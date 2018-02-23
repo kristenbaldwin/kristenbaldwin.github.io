@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dictionaries Exercises</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <h1><u>Dictionaries Exercises</u></h1>
+    <p class="header"># Exercise 1</p>
+    <p>Given the following dictionary, representing a mapping from names to phone numbers:</p>
+    <p>phonebook_dict = {<br>
+              &emsp;'Alice': '703-493-1834',<br>
+              &emsp;'Bob': '857-384-1234',<br>
+              &emsp;'Elizabeth': '484-584-2923'<br>
+        }</p>
+    <p>Write code to do the following:
+        <ol>
+            <li>Print Elizabeth's phone number.</li>
+            <li>Add a entry to the dictionary: Kareem's number is 938-489-1234.</li>
+            <li>Delete Alice's phone entry.</li>
+            <li>Change Bob's phone number to '968-345-2345'.</li>
+            <li>Print all the phone entries.</li>
+        </ol> 
+    </p>
+    <div class="code"><pre><code>
+    phonebook_dict = {
+        'Alice': '703-493-1834',
+        'Bob': '857-384-1234',
+        'Elizabeth': '484-584-2923'
+    }
+    #1
+    print(phonebook_dict['Elizabeth'])
+    #2
+    phonebook_dict['Kareem'] = '938-489-1234'
+    #3
+    del phonebook_dict['Alice']
+    #4
+    phonebook_dict['Bob'] = '968-345-2345'
+    #5
+    for key, value in phonebook_dict.items():
+        print(key, ":", value)
+    </code></pre></div>
+    <p class="header"># Exericse 2</p>
+    <ol>
+        <li>Write a python expression that gets the email address of Ramit.</li>
+        <li>Write a python expression that gets the first of Ramit's interests.</li>
+        <li>Write a python expression that gets the email address of Jasmine.</li>
+        <li>Write a python expression that gets the second of Jan's two interests.</li>
+    </ol>
+    <div class="code"><pre><code>
+    ramit = {
+        'name': 'Ramit',
+        'email': 'ramit@gmail.com',
+        'interests': ['movies', 'tennis'],
+        'friends': [
+            {
+                'name': 'Jasmine',
+                'email': 'jasmine@yahoo.com',
+                'interests': ['photography', 'tennis']
+            },
+            {
+                'name': 'Jan',
+                'email': 'jan@hotmail.com',
+                'interests': ['movies', 'tv']
+            }
+        ]
+        }
+        #1
+        print(ramit.get('email'))
+        #2
+        print(ramit['interests'][0])
+        #3
+        print(ramit['friends'][0]['email'])
+        #4
+        print(ramit['friends'][1]['interests'][1])
+    </code></pre></div>
+    <p class="header"># Exercise 3</p>
+    <p>Write a letter_histogram function that takes a word as its input, and returns a dictionary containing the tally of how many times each letter in the alphabet was used in the word.</p>
+    <div class="code"><pre><code>
+    word = input("Pick a word: ")
+    letter_dict = {}
+            
+    for char in word:
+        letter_dict[char] = word.count(char)
+    print(letter_dict)
+    </code></pre></div>
+    <p class="header"># Exercise 4</p>
+    <p>Write a word_histogram function that takes a paragraph of text as its input, and returns a dictionary containing the tally of how many times each word in the alphabet was used in the text.</p>
+    <div class="code"><pre><code>
+    phrase = input("Pick a phrase: ")
+    word_dict = {}
+    word_histogram = phrase.split()
+            
+    for word in word_histogram:
+        word_dict[word] = phrase.count(word)
+    print(word_dict)
+    </code></pre></div>
+    <p class="header">Bonus</p>
+    <p>Given a histogram tally (one returned from either letter_histogram or word_summary), print the top 3 words or letters.</p>
+    <div class="code"><pre><code>
+    from operator import itemgetter
+
+    top_3 = sorted(letter_dict, key=letter_dict.__getitem__, reverse=True)
+    print(top_3[0:3])
+    </code></pre></div>
+</body>
+</html>

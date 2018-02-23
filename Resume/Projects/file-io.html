@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File I/O Exercises</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <h1><u>File I/O Exercises</u></h1>
+    <p class="header"># Exercise 1</p>
+    <p>Write a program that prompts the user to enter a file name, reads the contents of the file and prints it to the screen.</p>
+    <div class="code"><pre><code>
+    file_name = input("Enter a file name to open: ")
+    with open(file_name, 'r') as fh:
+        contents = fh.read()
+        print(contents)
+    </code></pre></div>
+    <p class="header"># Exercise 2</p>
+    <p>Write a program that prompts the user to enter a file name, then prompts the user to enter the contents of the file, and then saves the content to the file.</p>
+    <div class="code"><pre><code>
+    file_name = input("Enter a file name to open: ")
+    with open(file_name, 'a') as fh:
+        fh.write("\nThis is a new file.\n")
+    </code></pre></div>
+    <p class="header"># Exercise 3</p>
+    <p>Write a program that prompts the user to enter a file name, then prints the letter histogram and the word histogram of the contents of the file.</p>
+    <div class="code"><pre><code>
+    file_name = input("Enter a file name to open: ")
+    with open(file_name, 'r') as fh:
+        contents = fh.read()
+        word = contents
+        letter_dict = {}
+
+        for char in word:
+            letter_dict[char] = word.count(char)
+        print(letter_dict)
+
+        phrase = contents
+        word_dict = {}
+        word_histogram = phrase.split()
+
+        for word in word_histogram:
+            word_dict[word] = phrase.count(word)
+        print(word_dict)
+    </code></pre></div>
+    <p class="header"># Exercise 4</p>
+    <p>Write program that takes a JSON file name as input and plots the X,Y data. Exchange JSON data with others to test your program more thoroughly.</p>
+    <p>Example Format:<br>
+    {<br>
+    &emsp;"data": [<br>
+    &emsp;&emsp;[1, 1],<br>
+    &emsp;&emsp;[2, 2],<br>
+    &emsp;&emsp;[3, 3],<br>
+    &emsp;&emsp;[4, 4]<br>
+    &emsp;]<br>
+    }</p>
+    <div class="code"><pre><code>
+    import json
+    import matplotlib.pyplot as plot
+
+    with open('io-exercises/data.json', 'r') as fh:
+        data = json.load(fh)
+        plot.plot(data['data'])
+        plot.show()
+        plot.close()
+    </code></pre></div>   
+</body>
+</html>

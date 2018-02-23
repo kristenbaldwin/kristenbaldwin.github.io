@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strings Exercises</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <h1><u>Strings Exercises</u></h1>
+    <p class="header"># Exercise 1</p>
+    <p>Given a string, print the string uppercased.</p>
+    <div class="code"><pre><code>
+    my_name = "kristen"
+    print(my_name.upper())
+    </code></pre></div>
+    <p class="header"># Exercise 2</p>
+    <p>Given a string, print the string capitalized.</p>
+    <div class="code"><pre><code>
+    print(my_name.capitalize())
+    </code></pre></div>
+    <p class="header"># Exercise 3</p>
+    <p>Given a string, print the string reversed.</p>
+    <div class="code"><pre><code>
+    greeting = "Hello there and good morning"
+    def reverse(string):
+        return string[::-1]
+    print(reverse(greeting))
+    </code></pre></div>
+    <p class="header"># Exercise 4</p>
+    <p>Given a paragraph of text as a string, print the paragraph in leetspeak. To translate a string to leetspeak, you need to replace make the following character replacements (treat all input characters as uppercase):</p>
+    <div class="code"><pre><code>
+    #A => 4
+    #E => 3
+    #G => 6
+    #I => 1
+    #O => 0
+    #S => 5
+    #T => 7
+            
+    text = input("Your text: ").upper()
+    text = text.replace("A", "4")
+    text = text.replace("E", "3")
+    text = text.replace("G", "6")
+    text = text.replace("I", "1")
+    text = text.replace("O", "0")
+    text = text.replace("S", "5")
+    text = text.replace("T", "7")
+    print(text)
+    </code></pre></div>
+    <p class="header"># Exercise 5</p>
+    <p>Given a word as a string, print the result of extending any long vowels to the length of 5. Examples:</p>
+        <ul>
+            <li>Good => Goooood</li>
+            <li>Cheese => Cheeeeese</li>
+            <li>Man => Man</li>
+            <li>Spoon => Spooooon</li>
+        </ul>
+    <div class="code"><pre><code>
+    word = input("Your word: ")
+    word = word.replace("oo", "ooooo")
+    word = word.replace("ee", "eeeee")
+    print(word)
+    </code></pre></div>
+    <p class="header"># Exercise 6</p>
+    <p>Given a string, print the Caesar Cipher (or ROT13) of that string.</p>
+    <p>Use your solution to decipher the following text: "lbh zhfg hayrnea jung lbh unir yrnearq"</p>
+    <div class="code"><pre><code>
+    cipher_text = "lbh zhfg hayrnea jung lbh unir yrnearq"
+    offset = 13
+    decoded = ""
+            
+    for character in cipher_text:
+        ascii_code = ord(character)
+        if ascii_code >= 97 and ascii_code <= 122:
+            decode_character = ascii_code + offset
+            if decode_character >= 122:
+                new_character = chr(decode_character - 26)
+            else:
+                new_character = chr(decode_character)
+        else:
+            new_character = chr(ascii_code)
+        decoded += new_character
+    print(decoded)
+    </code></pre></div>
+</body>
+</html>
