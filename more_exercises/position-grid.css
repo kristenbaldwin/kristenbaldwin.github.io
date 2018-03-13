@@ -1,0 +1,82 @@
+.parent {
+    position: relative;
+    background-color: green;
+    text-align: center;
+    height: 1000px;
+}
+
+.box {
+    height: 33.33%;
+    margin: 0 auto;
+}
+
+.grid1 {
+    position: absolute;
+    width: 33.33%;
+    left: 0px;
+    background-color: purple;
+}
+
+.grid2 {
+    position: absolute;
+    width: 33.33%;
+    top: 0px;
+    left: 33.33%;
+    background-color: aqua;
+}
+
+.grid3 {
+    position: absolute;
+    width: 33.33%;
+    top: 0px;
+    right: 0px;
+    background-color: lightcoral;
+}
+
+.grid4 {
+    position: absolute;
+    width: 33.33%;
+    top: 33.33%;
+    left: 0px;
+    background-color: orangered;
+}
+
+.grid5 {
+    position: absolute;
+    width: 33.33%;
+    top: 33.33%;
+    left: 33.33%;
+    background-color: steelblue;
+}
+
+.grid6 {
+    position: absolute;
+    width: 33.33%;
+    top: 33.33%;
+    right: 0px;
+    background-color: darkblue;
+}
+
+.grid7 {
+    position: absolute;
+    width: 33.33%;
+    top: 66.66%;
+    left: 0px;
+    background-color: maroon;
+}
+
+.grid8 {
+    position: absolute;
+    width: 33.33%;
+    top: 66.66%;
+    left: 33.33%;
+    background-color: darkgoldenrod;
+}
+
+.grid9 {
+    position: absolute;
+    width: 33.33%;
+    top: 66.66%;
+    right: 0px;
+    background-color: forestgreen;
+}

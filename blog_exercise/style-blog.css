@@ -1,0 +1,57 @@
+body {
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    font-size: 14px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.header {
+    text-align: right;
+    margin-top: 2%;
+}
+
+img.center {
+    vertical-align: bottom;  
+}
+
+.bio {
+    margin-top: 100px;
+}
+
+.icon {
+    display: inline-block;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.user-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    line-height: 1.75em;
+}
+
+.follow {
+    vertical-align: top;
+}
+
+.blog-post {
+    line-height: 2em;
+}
+
+h1, h2, h3 {
+    line-height: 0.3em;
+}
+
+.blog-post img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption {
+    text-align: center;
+    color: rgb(155, 154, 154);
+    font-size: 12px;
+}

@@ -1,0 +1,40 @@
+body {
+    font-size: 25px;
+}
+
+.header {
+    background-color: #666;
+    color: white;
+    height: 100px;
+    position: relative;
+    line-height: 100px;
+    text-align: center;
+}
+
+.sidebar {
+    display: inline-block;
+    background-color: rgb(230, 230, 230);
+    width: 30%;
+    height: 500px;
+    margin: 0px auto;
+    line-height: 500px;
+    text-align: center;
+}
+
+.main-content {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(179, 178, 178);
+    width: 69%;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
