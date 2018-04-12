@@ -104,11 +104,10 @@ h4 {
     margin-top: 30px;
     background-color: rgb(80, 20, 105);
     color: white;
-    padding: 60px 30px 60px 30px;
+    padding: 60px 22px;
 }
 
 .purple-section > .col {
-    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -189,6 +188,9 @@ h4 {
     }
     #greeting {
         font-size: 40px;
+    }
+    .purple-section > .col {
+        max-width: 90%;
     }
     .card-deck .card {
         margin-left: 0;
