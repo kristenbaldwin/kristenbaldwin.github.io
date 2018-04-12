@@ -128,13 +128,30 @@ h4 {
     padding: 0px;
 }
 
-.card-deck .card:hover {
-    box-shadow: 0 0 10px 5px #777;
-}
-
 .card-img-top {
     max-width: 320px;
     align-self: center;
+}
+
+.see-more {
+    padding: 10px;
+    width: 120px;
+    background-color: rgb(80, 20, 105);
+    border-radius: 10px;
+    margin: 0 auto;
+    transition: transform .3s;
+}
+
+.see-more > a {
+    color: white;
+    text-decoration: none;
+}
+
+.see-more:hover {
+    filter: blur(0);
+    transition: transform .3s;
+    transform: scale(1.2);
+    zoom: 1;
 }
 
 .skills-section img{
