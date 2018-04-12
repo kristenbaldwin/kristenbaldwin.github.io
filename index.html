@@ -1,57 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kristen Baldwin's Resume</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+    <link rel="icon" href="about_me/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="about_me/images/favicon.ico" type="image/x-icon">
+    <title>Hi, I'm Kristen</title>
 </head>
-<body>
-    <h1>KRISTEN BALDWIN</h1>
-    <div id="header">
-      <img class="headshot" src="resume/images/headshot.jpg" alt="Kristen Baldwin">
-      <p class="contact-info">
-          E: <a href="mailto:kristen.baldwin22@gmail.com">kristen.baldwin22@gmail.com</a>
-          <br />P: <a href="tel:3097068268">309-706-8268</a>
-      </p>
+<body data-spy="scroll" data-target="#main-nav">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="main-nav">
+            <a class="navbar-brand" href="#">
+                <img src="about_me/images/kb.png" width="30" height="30" class="d-inline-block align-top" alt="Kristen Baldwin">
+                Kristen Baldwin
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#bio">About</a>
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#skills">Skills</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row" id="header-image">
+            <div class="col">
+                <h1 id="greeting">Hi, I'm Kristen.<br>Software Developer in Training.</h1>
+            </div>
+        </div>
+        <div class="row not-full-width" id="bio">
+            <div class="col2 col-lg-3 bio-intro">
+                <img src="about_me/images/profile.jpeg" class="headshot">
+                <h5 class="bio-name">Kristen Baldwin</h5>
+                <h6 class="location">Houston, TX</h6>
+                <a href="https://www.linkedin.com/in/kbwin/" target="_blank"><img class="icon" src="about_me/icons/final/linkedin_logo.png" alt="Linked In"></a>
+                <a href="https://github.com/kristenbaldwin" target="_blank"><img class="icon" src="about_me/icons/final/github_logo.png" alt="GitHub"></a>
+                <a href="https://twitter.com/MarketerKristen" target="_blank"><img class="icon" src="about_me/icons/final/twitter_logo.png" alt="Twitter"></a>
+            </div>
+            <div class="col2 col-lg-9">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="section-header">About Me</h4>
+                        <p class="about-me">As a graduate from The University of Texas at Austin, I began my career in digital marketing. From working at an agency to ecommerce, I honed my marketing skills in email, social media, advertising, site management and analysis. I developed an interest in learning how to create high converting sites and became more involved with my dev team, from logging bugs to testing fixes and new releases. To become a software developer, I decided to attend a 16 week immersive coding bootcamp with Digital Crafts. While attending Digital Crafts, I discovered a passion for front-end development and am looking forward to helping you with your web development needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row purple-section" id="projects">
+            <div class="col">
+                <h4 class="projects-header">Featured Projects</h4>
+                <div class="row card-deck">
+                    <div class="card col-12 col-lg-4 card-bottom">
+                        <img class="card-img-top" src="about_me/images/project_dentalplan.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Dental Plan Search</h5>
+                            <p class="card-text">As part of a 3-person team, took the lead on responsive design for a landing and results page. Landing page featured a form and statistics animation on scroll. Results page featured a chart and DOM manipulation to display top 4 plan results from an API call. </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Technologies Used: HTML, CSS, Bootstrap, JavaScript, jQuery, JSON</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-4 card-bottom">
+                        <img class="card-img-top" src="about_me/images/project_blackjack.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Blackjack Simulator</h5>
+                            <p class="card-text">Created a blackjack game with logic for deal, hit and stand actions chosen by the player. Every action updated and displayed the cards and points in each hand, along with a message declaring the winner. Used an object-oriented approach with jQuery for DOM manipulation.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Technologies Used: HTML, CSS, JavaScript, jQuery</small>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-lg-4">
+                        <img class="card-img-top" src="about_me/images/project_petsgallery.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Pets Picture Gallery</h5>
+                            <p class="card-text">Created a dynamic picture gallery using Node, Express and EJS which featured 3 pages of pictures, a contact us form which stored and displayed feedback using JSON and a chat page using Socket.io.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Technologies Used: HTML, CSS, JavaScript, Node, Express, EJS, Socket.io, JSON</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row not-full-width skills-section" id="skills">
+            <div class="col">
+                <h4>My Skills</h4>
+                <div class="row skills">
+                    <div class="col-s">
+                        <figure>
+                            <img src="about_me/icons/final/html5_logo.png" alt="HTML5">
+                            <figcaption>HTML</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-s">
+                        <figure>
+                            <img src="about_me/icons/final/css3_logo.png" alt="CSS3">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-s">
+                            <figure>
+                                <img src="about_me/icons/final/bootstrap_logo.png" alt="Bootstrap">
+                                <figcaption>Bootstrap</figcaption>
+                            </figure>
+                    </div>
+                    <div class="col-s">
+                        <figure>
+                            <img src="about_me/icons/final/javascript_logo.png" alt="JavaScript">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-s">
+                            <figure>
+                                <img src="about_me/icons/final/jquery_logo.png" alt="jQuery">
+                                <figcaption>jQuery</figcaption>
+                            </figure>
+                    </div>
+                    <div class="col-s">
+                        <figure>
+                            <img src="about_me/icons/final/nodejs_logo.png" alt="Node.js">
+                            <figcaption>Node.js</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-s">
+                        <figure>
+                            <img src="about_me/icons/final/express_logo.png" alt="Express">
+                            <figcaption>Express.js</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-s">
+                        <img src="about_me/icons/final/git_logo.png" alt="Git">
+                        <figcaption>Git</figcaption>
+                    </div>
+                    <div class="col-s">
+                        <img src="about_me/icons/final/python_logo.png" alt="Python">
+                        <figcaption>Python</figcaption>
+                    </div>
+                    <div class="col-s">
+                        <img src="about_me/icons/final/postgres_logo.png" alt="PostgreSQL">
+                        <figcaption>PostgreSQL</figcaption>
+                    </div>
+                    <div class="col-s">
+                        <img src="about_me/icons/final/magento_logo.png" alt="Magento">
+                        <figcaption>Magento</figcaption>
+                    </div>
+                    <div class="col-s">
+                        <img src="about_me/icons/final/google_analytics_logo.png" alt="Google Analytics">
+                        <figcaption>Google Analytics</figcaption>
+                    </div>
+                    <div class="col-s">
+                        <img src="about_me/icons/final/photoshop_logo.png" alt="Photoshop">
+                        <figcaption>Photoshop</figcaption>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="row not-full-width" id="contact">
+            <div class="col">
+                <h4>Ready to Connect?</h4>
+                <p>I enjoy meeting other developers, techies and interested collaborators!<br>Feel free to send me an email, connect on LinkedIn, follow me on GitHub and take a look at my resume.</p>
+                <a href="mailto:kristen.baldwin22@gmail.com"><img src="about_me/icons/final/email_icon.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/kbwin/" target="_blank"><img class="icon" src="about_me/icons/final/linkedin_logo.png" alt="Linked In"></a>
+                <a href="https://github.com/kristenbaldwin" target="_blank"><img class="icon" src="about_me/icons/final/github_logo.png" alt="GitHub"></a>
+                <a href="about_me/images/KristenBaldwin_Resume 2018.pdf" target="_blank"><img src="about_me/icons/final/resume_icon.png" alt="Resume"></a>
+            </div>
+        </div>
+        <div class="row purple-section" id="footer">
+            <div class="col">
+                Created by Kristen Baldwin &#169; 2018
+            </div>
+        </div>
     </div>
-    <hr />
-    <h4>EDUCATION</h4>
-    <p class="close-line-spacing">The University of Texas at Austin</p>
-    <ul>
-      <li>Bachelor of Business Administration, Marketing</li>
-      <li>Minor: Public Relations</li>
-      <li>December 2013</li>
-    </ul>
-    <hr />
-    <h4>PROJECTS</h4>
-    <p class="close-line-spacing">Python Exercises</p>
-    <ul>
-      <li><a href="http://krbaldwin.com/resume/projects/python-part1-exercises.html" target="_blank">Python Part 1</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/guess-a-number.html" target="_blank">Guess A Number</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/lists.html" target="_blank">Lists</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/loops.html" target="_blank">Loops</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/strings.html" target="_blank">Strings</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/functions.html" target="_blank">Functions</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/turtle-graphics.html" target="_blank">Turtle Graphics</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/dictionaries.html" target="_blank">Dictionaries</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/phonebook-app.html" target="_blank">Phonebook App</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/file-io.html" target="_blank">I/O</a></li>
-      <li><a href="http://krbaldwin.com/resume/projects/objects.html" target="_blank">Objects</a></li>     
-    </ul>
-    <hr />
-    <div class="footer">
-      <table style="width:100px; margin: auto;">
-        <tr>
-          <td align="center"><a href="https://www.linkedin.com/in/kbwin/" target="_blank"><img src="resume/images/linkedin-logo.png" alt="LinkedIn page" width="40" height="40"></a></td>
-          <td align="center"><a href="https://github.com/kristenbaldwin" target="_blank"><img src="resume/images/GitHub-logo.png" alt="Github page" width="40" height="40"></a></td>
-        </tr>
-      </table>
-    </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
