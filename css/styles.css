@@ -127,9 +127,11 @@ h4 {
     padding: 0px;
 }
 
-.card-img-top {
-    max-width: 320px;
+.card-img-top, video {
+    max-width: 301px;
     align-self: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .see-more {
@@ -196,6 +198,9 @@ h4 {
         margin-left: 0;
         margin-right: 0;
     }
+    video {
+        max-width: 446px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -207,6 +212,9 @@ h4 {
     }
     .purple-section > .col {
         max-width: 75%;
+    }
+    video {
+        max-width: 511px;
     }
 }
 
@@ -233,6 +241,9 @@ h4 {
         max-width: 95%;
         padding: 0;
     }
+    video {
+        max-width: 278px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -245,6 +256,9 @@ h4 {
     .section-header {
         margin-top: 0px;
     }
+    video {
+        max-width: 344px;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -256,5 +270,8 @@ h4 {
     }
     .section-header {
         margin-top: 0px;
+    }
+    video {
+        max-width: 471px;
     }
 }
