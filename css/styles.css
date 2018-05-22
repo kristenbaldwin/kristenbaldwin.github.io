@@ -134,9 +134,14 @@ video {
     border-top-right-radius: 5px;
 }
 
+.award {
+    font-style: italic;
+    margin-top: -12px;
+}
+
 .see-more {
     padding: 10px;
-    width: 120px;
+    width: 135px;
     background-color: rgb(80, 20, 105);
     border-radius: 10px;
     margin: 0 auto;
